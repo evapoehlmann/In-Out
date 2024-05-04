@@ -1,0 +1,57 @@
+title: "Modeling Individual Differences in the Articulatory In-Out Effect"
+author: "March 5, 2024"
+format: pdf
+editor: source
+---
+
+## The Model
+
+Let $Y_{ijk}$ be the rating for
+
+-   person $i$, $i = 1, \ldots, I$,
+-   condition $j$, $j = -0.5, 0.5$ (Out, In),
+-   replicate $k$, $k = 1, \ldots, K_{ij}$.
+
+We specify the following linear model on $Y_{ijk}$
+$$Y_{ijk} \sim \text{Normal}(\mu + \alpha_{i} + x_{j} \theta_{i}, \sigma^2)$$
+with
+$$\alpha_{i} \sim \text{Normal}(0, \sigma_\alpha^2)$$
+### Modeling Individual Differences
+
+To test theoretical constraints on the structure of individual differences, we specify three competing models on individual effects parameters (see Haaf & Rouder, 2017):
+
+\vspace{.5cm}
+
+**1. Unconstrained Model:**
+
+$$M_u\!:\ \theta_{i} \sim \text{Normal}(\nu, \delta^2),$$
+reflecting qualitative individual differences, that is, true positive and negative individual effects. 
+
+\newpage 
+
+**2. Positive-Effects Model:**
+
+$$M_p\!:\ \theta_{i} \sim \text{Normal}^+(\nu, \delta^2),$$
+where $\text{Normal}^+$ denotes a truncated normal distribution with a lower bound at 0. This model denotes quantitative differences, that is, individual differences in the *size* of the effect, but not the *sign* (i.e., direction).
+
+\vspace{.5cm}
+
+**3. Common-Effect Model:**
+
+$$M_c\!:\ \theta_{i} = \nu,$$
+denoting the absence of individual differences. 
+
+
+### Prior Specification
+
+To complete model specification, we place weakly informative priors on unknown model parameters, following substantive considerations about typically observed parameter values. On a standardized rating scale from $-1$ to $1$, trial-by-trial variability is around $\sigma = 0.30$. Mean effects are about $1/3$ this size, that is, $\nu = 0.10$, and we expect individual variability to be around the same size, that is, $\sigma_\alpha = \delta = 0.10$. 
+
+\begin{equation*}
+\begin{aligned}
+\mu &\sim \text{Normal}(0, {0.50}^2)\\
+\nu &\sim \text{Normal}(0, {0.10}^2)\\
+\sigma &\sim \text{Normal}^+(0, {0.30}^2)\\
+\sigma_\alpha &\sim \text{Normal}^+(0, {0.10}^2)\\
+\delta &\sim \text{Normal}^+(0, {0.10}^2)\\
+\end{aligned}
+\end{equation*} 

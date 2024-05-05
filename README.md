@@ -2,7 +2,7 @@
 This repository is in association with my bachelor's thesis investigating individual differences in the articulatory in-out effect. 
 We did so by employing a Bayesian modelling approach. 
 
-# Some notes for transparency and readability
+# Some notes on readability and what this code does
 
 Model specifications can be found in the respective STAN files (one_model.stan and u_model.stan for the main analysis). An overview can also be found in the model specification.qmd-file. 
 

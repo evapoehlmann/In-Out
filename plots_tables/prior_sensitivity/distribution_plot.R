@@ -27,7 +27,7 @@ ggplot(df, aes(x = x, y = Density, linetype = Distribution)) +
   scale_linetype_manual(values = c("solid", "twodash", "dotted")) +  
   labs(x = expression(delta),
        linetype = bquote(SD[delta])) + 
-  theme_minimal() +
+  theme_classic() +
   theme(
         legend.position = "bottom",
         axis.text.y = element_blank(),

@@ -16,7 +16,7 @@ The script "get_preferred_model.R" contains code for computation of the Bayes fa
 
 The script "combined_analyses1314.R" is a modelling script that follows the exact same approach as the other modelling scripts. study13 and study14, whose data sets come from the same study and follow the same methodology, were simply combined for sample size reasons. This further analysis was done for exploratory reasons and built an argumentation block in the discussion.
 
-The "plots_tables" folder contains code for the generation of plots (plots for sensitivity analysis (in folder "prior_sensitivity") and the model-prediction plot ( in folder "prediction_plot")), the plots themselves (including the estimation plots) and tables in LaTeX. 
+The "plots_tables" folder contains code for the generation of plots (plots for sensitivity analysis (in folder "prior_sensitivity") and the model-prediction plot (in folder "prediction_plot"), the plots themselves (including the estimation plots) and tables in LaTeX. 
 
 The "prior_sensitivity_analysis" folder contains the analyses for both prior settings ("high_setting" and "low_setting") used in the sensitivity analyses: A STAN file for the unconstrained model with the respective prior specifications, modelling scripts and Bayes factor tables, respectively.
 

@@ -25,7 +25,7 @@ The "descriptive_analyses" folder contains code for descriptive analyses, data m
 
 # If you want to use this code
 
-If you clone this repo, I would recommend setting up a new R-project from this github repository. All scripts will work fine in regards to file paths if you do so.
+If you clone this repo, I would recommend setting up a new R-project from this github repository and set it as the working directory. All scripts will work fine in regards to file paths if you do so.
 
 # References 
 

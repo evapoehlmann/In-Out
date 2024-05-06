@@ -196,6 +196,6 @@ print(latex_table, include.rownames = TRUE)
 
 df <- read.csv("descriptive_analyses/Descriptive Results.csv")
 
-df <- subset(df, select = c("Study.Experiment", "N", "k.per.condition", "mean.effect", "sd.of.effect", "Cohen.s.dz", "sd.trial.by.trial"))
+df <- subset(df, select = c("Study.Experiment", "N", "k.per.condition", "mean.effect", "sd.of.effect", "Cohen.s.dz"))
 latex_table <- xtable(df)
 print(latex_table, include.rownames = TRUE)

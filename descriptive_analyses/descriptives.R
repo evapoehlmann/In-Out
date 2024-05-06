@@ -6,7 +6,7 @@ library(httr)
 
 
 descriptives <- matrix(nrow=15, ncol = 9)
-colnames(descriptives) <- c("Study/Experiment", "N", "k per condition", "syllables", "mean effect", "sd of effect", "Cohen's d", "Cohen's dz", "sd trial-by-trial")
+colnames(descriptives) <- c("Study/Experiment", "N", "k per condition", "syllables", "mean effect", "sd of effect", "Cohen's d", "Cohen's dz", "sd overall")
 
 #study1
 #Gerten & Topolinski, 2020
